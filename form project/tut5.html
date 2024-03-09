@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="shortcut icon" href="hand-drawn-flat-design-anarchy-symbol_23-2149244760-removebg-preview.png" type="image/x-icon">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: linear-gradient(the right, #f027);
+
+    }
+
+    html {
+        background: linear-gradient(to right, #9c27b0, #8ecdff);
+
+    }
+
+    #main-header {
+        background: #cfe9ff;
+        box-shadow: 0px 3px 10px 2px;
+        position: sticky;
+        top: 0;
+
+
+    }
+
+    .container {
+        margin: auto;
+    }
+
+    .main-section {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .nav-logo img {
+        width: 70px;
+    }
+
+    h1.h1 {
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
+    .para {
+        margin-left: 20px;
+        margin-top: 20px;
+        padding: 20PX;
+        border: 1px solid;
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        width: 420px;
+        border-radius: 30px;
+        background-color: rgb(175, 29, 29);
+        color: white;
+    }
+
+    .ul-item {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+        list-style: none;
+
+
+    }
+
+    .tab a {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        text-decoration: none;
+        margin: 20px;
+
+
+    }
+
+
+    button#button {
+        display: block;
+        margin: auto;
+        background-color: blue;
+        padding: 15px;
+        width: 340px;
+        color: white;
+        border-radius: 10px;
+        border: 1px solid;
+        box-shadow: 1px 2px 0px 0 rgb(104, 104, 151);
+
+       
+    }
+
+    .formlist {
+        background-color: white;
+        width: 400px;
+        padding: 30px;
+        border-radius: 30px;
+        display: block;
+        margin: auto;
+        margin-top: 70px;
+    }
+
+ 
+   
+
+    #button {
+        display: block;
+        margin: auto;
+        background-color: blue;
+        padding: 10px;
+        width: 330px;
+        color: white;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+   a#buttonRegister {
+        display: block;
+        margin: auto;
+        background-color:green;
+        margin-top: 10px;
+        padding: 10px;
+        width: 150px;
+        color: white;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .footer{
+       display: flex;justify-content: center;
+       background-color: black;
+       color: white;
+       margin-top: 14.5%;
+       
+    }
+    input {
+            display: block;
+            margin: 12px;
+            padding: 10px;
+            width: 400px;
+            border-radius: 7px;
+            border: none;
+            outline: none;
+            background-color: white;
+
+        }
+        
+    
+
+.form-group{
+   border: 1px solid rgb(156, 156, 156);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    
+  
+}
+
+    .fa.fa-user{
+    margin-left: 11px;
+}
+.fa-solid.fa-envelope{
+    margin-left:10px;
+}
+.fa-solid.fa-phone{
+    margin-left:10px;
+}
+</style>
+<body>
+    <div class="formlist">
+    <form action="">
+        <div class="form-group">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input  type="text" name="name" id="name" placeholder="Enter your name" > </div>
+           <div class="form-group">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="name" id="Fname-value" placeholder="Enter your father name">
+        </div>
+        <div class="form-group">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="emial" id="email" placeholder="enter your email">
+        </div>
+        <div class="form-group">
+            <i class="fa-solid fa-phone"></i>
+            <input type="number" name="number" id="number" placeholder="Enter your phone number">
+        </div>
+        <button id="button" type="button"> Register Now</button>
+        </form>
+    </div>
+    <footer class="footer">
+        @copyrightwww.copyright.com   
+     </footer>
+    
+    <script>
+         const buttonRegister=document.getElementById("button-register")
+         const button=document.getElementById("button")
+         const name=document.getElementById("name")
+         const Fname =document.getElementById("Fname-value")
+         const email =document.getElementById("email")
+         const number =document.getElementById("number")
+         function registeration(){
+            document.write(name.value+"<br>")
+            document.write(Fname.value+"<br>")
+            document.write(email.value+"<br>")
+            document.write(number.value+"<b>")
+         }
+         button.addEventListener("click",registeration)
+      
+    </script>
+</body>
+</html>

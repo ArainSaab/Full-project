@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="hand-drawn-flat-design-anarchy-symbol_23-2149244760-removebg-preview.png"
+        type="image/x-icon">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+
+    }
+
+    html {
+        background: linear-gradient(to right, #9c27b0, #8ecdff);
+
+    }
+
+    #main-header {
+        background: #cfe9ff;
+        box-shadow: 3px 2px 6px 0px rgb(112, 112, 255);
+        position: sticky;
+        top: 0;
+
+
+    }
+
+    .container {
+        margin: auto;
+    }
+
+    .main-section {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .nav-logo img {
+        width: 70px;
+    }
+
+    h1.h1 {
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
+    .para {
+        margin-left: 20px;
+        margin-top: 20px;
+        padding: 20PX;
+        border: 1px solid;
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        width: 420px;
+        border-radius: 30px;
+        background-color: rgb(175, 29, 29);
+        color: white;
+    }
+
+    .ul-item {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+        list-style: none;
+
+
+    }
+
+    .tab a {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        text-decoration: none;
+        margin: 20px;
+
+
+    }
+
+    button {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        text-decoration: none;
+        margin: 20px;
+
+
+    }
+
+    .formlist {
+        background-color: white;
+        width: 400px;
+        padding: 30px;
+        border-radius: 30px;
+        display: block;
+        margin: auto;
+        margin-top: 70px;
+    }
+
+
+
+    input#name:focus-visible {
+        outline: blue
+    }
+
+    #button {
+        display: block;
+        margin: auto;
+        background-color: blue;
+        padding: 15px;
+        width: 340px;
+        color: white;
+        border-radius: 10px;
+        border: 1px solid;
+        box-shadow: 1px 2px 0px 0 blue;
+
+
+    }
+
+    a#buttonRegister {
+        display: block;
+        margin: auto;
+        background-color: green;
+        margin-top: 10px;
+        padding: 10px;
+        width: 150px;
+        color: white;
+        border-radius: 10px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        margin-top: 5.6%;
+
+    }
+
+    input {
+        display: block;
+        margin: 12px;
+        padding: 10px;
+        width: 400px;
+        border-radius: 7px;
+        border: none;
+        outline: none;
+        background-color: white;
+
+    }
+
+    .form-group:focus-visible {
+        border: 1px solid black;
+        outline: none;
+
+
+
+    }
+
+    .form-group {
+        outline: 1px solid blue;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 8px;
+
+
+    }
+
+    .fa.fa-user {
+        margin-left: 11px;
+    }
+
+    .fa-solid.fa-envelope {
+        margin-left: 10px;
+    }
+
+    .fa-solid.fa-phone {
+        margin-left: 10px;
+    }
+</style>
+
+<body>
+    <div id="main-header">
+        <div class="navbar-section">
+            <div class="container">
+                <div class="main-section">
+                    <div class="nav-logo">
+                        <img src="hand-drawn-flat-design-anarchy-symbol_23-2149244760-removebg-preview.png" alt="">
+                    </div>
+                    <div class="tab">
+                        <ul class="ul-item">
+                            <a href="Form.html" class="tabLink" onclick="opentab(event,'home')">Home</a>
+                            <a href="facebook.html" class="tabLink" onclick="opentab(event,'contactUs')">contactUs</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <pi id="demo"></p>
+        <button type="button" id="button1">click me</button>
+    <div class="main-header">
+        <div id="contactUs" class="tabcontent">
+            <div class="formlist">
+                <form action="">
+                    <!-- <div class="form-group">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" name="name" id="name-value" placeholder="Enter your father name">
+                    </div> -->
+                    <div class="form-group">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="emial" id="email" placeholder="enter your email">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="password" name="password" id="password" placeholder="enter your password">
+                    </div>
+                    <!-- <div class="form-group">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="number" name="number" id="number" placeholder="Enter your phone number">
+                    </div> -->
+                    <button id="button" type="button" onclick="fun()"> login in</button>
+
+                    <a href="tut5.html" id="buttonRegister" onclick="register (event,'register')">Register Now</a>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <p id="para">This is paragraph in javascript </p>
+    <button type="button" onclick="document.getElementById('para').style.color ='red'">click me</button> -->
+    <footer class="footer">
+        @copyrightwww.copyright.com
+    </footer>
+        
+        
+        
+        
+        <script>
+        document.getElementById('button1').addEventListener("click" ,mytime)
+        function mytime(){
+         document.getElementById('demo').innerHTML=Date();
+        }
+
+
+        function opentab(event, tablink) {
+            let i, tabcontent, tabLink
+            tabcontent = document.getElementsByClassName('tabcontent');
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none"
+            }
+            document.getElementById(tablink).style.display = "block";
+            evt.currentTarget.className += " active";
+
+        }
+
+
+
+        function fun() {
+         
+            const email = document.getElementById("email").value
+            const password = document.getElementById("password").value
+            if(email == "ali@gmail.com"&& password == "12345"){
+                window.location.assign('spotify.html')
+            }
+            else(
+                alert("wrong password")
+            )
+
+            
+
+        }
+
+        button.addEventListener("click", fun);
+    </script>
+
+
+
+</body>
+
+</html>

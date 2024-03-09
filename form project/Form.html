@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" href="hand-drawn-flat-design-anarchy-symbol_23-2149244760-removebg-preview.png" type="image/x-icon">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    #main-header {
+
+        background: #cfe9ff;
+        box-shadow: 0px 3px 10px 2px black;
+        position: sticky;
+        top: 0;
+
+
+    }
+
+    .main-section {
+        display: flex;
+        justify-content: space-between;
+
+
+
+    }
+
+    .nav-logo img {
+        width: 70px;
+    }
+
+    h1.h1 {
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
+    html {
+        content: "";
+        position: absolute;
+        background: url(people-taking-part-business-event_23-2149346603.jpg)no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index:1;
+        opacity: 0.80;
+
+    }
+
+    
+
+    .para {
+        padding: 20PX;
+        border: 1px solid;
+        display: block;
+        margin: auto;
+        margin-top: 100px;
+        height: 300px;
+        line-height: 2;
+        column-gap: 1px;
+        width: 420px;
+        border-radius: 30px;
+        color: rgb(255, 255, 255);
+        background-color: #000000;
+
+    }
+
+    .ul-item {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+        list-style: none;
+
+
+    }
+
+    .tab a {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        text-decoration: none;
+        margin: 20px;
+
+
+    }
+
+    button {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        text-decoration: none;
+        margin: 20px;
+
+
+
+    }
+
+    .formlist {
+        background-color: yellowgreen;
+        width: 500px;
+        border-radius: 20px;
+    }
+
+    input {
+        display: block;
+        margin: 2px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        margin-top: 20%;
+
+    }
+</style>
+
+<body>
+
+    <header id="main-header">
+        <div class="navbar-section">
+            <div class="container">
+                <div class="main-section">
+                    <div class="nav-logo">
+                        <img src="hand-drawn-flat-design-anarchy-symbol_23-2149244760-removebg-preview.png" alt="">
+                    </div>
+                    <div class="tab">
+                        <ul class="ul-item">
+                            <a href="Form.html" class="tabLink" onclick="opentab(event,'home')">Home</a>
+                            <a href="facebook.html" class="tabLink" onclick="opentab(event,'contactUs')">ContactUs</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <div id="home" class="tabcontent">
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero atque dignissimos repellat
+            ducimus id sapiente recusandae quas nihil. Assumenda vero modi illum alias nam quia delectus minus ratione
+            numquam necessitatibus distinctio ismpedit eveniet, tempore sint quidem praesentium ex illo sunt officiis
+            voluptatem? Temporibus reiciendis sit, rem repellendus explicabo vero!</p>
+    </div>
+    <footer class="footer">
+        @copyrightwww.copyright.com
+    </footer>
+
+
+
+
+    <script>
+
+
+        function opentab(event, tablink) {
+            let i, tabcontent, tabLink
+            tabcontent = document.getElementsByClassName('tabcontent');
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none"
+            }
+            document.getElementById(tablink).style.display = "block";
+            evt.currentTarget.className += " active";
+
+        }
+
+      
+       
+    </script>
+
+
+
+
+</body>
+
+</html>
